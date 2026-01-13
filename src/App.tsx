@@ -8,10 +8,12 @@ import { Button } from "./components/button";
 import { ButtonIcon } from "./components/buttonIcon";
 import { Input } from "./components/input";
 import { Checkbox } from "./components/checkbox";
+import { Card } from "./components/card";
+import { Container } from "./components/container";
 
 export default function App() {
   return (
-    <>
+    <Container>
       <Text variant={"body-md"}>Olá Mundo</Text>
       <Icon svg={TrashIcon} />
       <Icon svg={SpinnerIcon} animate />
@@ -23,6 +25,8 @@ export default function App() {
       <ButtonIcon icon={SpinnerIcon} />
       <Input />
       <Checkbox />
-    </>
+
+      <Card size={"md"}>Olá Mundo</Card>
+    </Container>
   );
 }
