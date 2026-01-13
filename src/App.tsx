@@ -1,7 +1,9 @@
+import { Text } from "./components/text";
+
 export default function App() {
   return (
     <>
-      <p>Olá Mundo</p>
+      <Text variant={"body-md"}>Olá Mundo</Text>
     </>
   );
 }
