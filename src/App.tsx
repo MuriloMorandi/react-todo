@@ -6,6 +6,8 @@ import { Icon } from "./components/icon";
 import { Badge } from "./components/badge";
 import { Button } from "./components/button";
 import { ButtonIcon } from "./components/buttonIcon";
+import { Input } from "./components/input";
+import { Checkbox } from "./components/checkbox";
 
 export default function App() {
   return (
@@ -19,6 +21,8 @@ export default function App() {
       <ButtonIcon icon={TrashIcon} variant="tertiary" />
       <ButtonIcon icon={PlusIcon} variant="secondary" />
       <ButtonIcon icon={SpinnerIcon} />
+      <Input />
+      <Checkbox />
     </>
   );
 }
