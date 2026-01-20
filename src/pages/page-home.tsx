@@ -1,5 +1,5 @@
-import { Container } from "../components/container";
-import { Text } from "../components/text";
+import { Container } from "../components/ui/container";
+import { Text } from "../components/ui/text";
 
 export default function PageHome() {
   return (
