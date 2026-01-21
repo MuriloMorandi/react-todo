@@ -1,10 +1,12 @@
+import { TaskSummary } from "../components/core/task-summary";
 import { Container } from "../components/ui/container";
-import { Text } from "../components/ui/text";
 
 export default function PageHome() {
   return (
-    <Container className="flex flex-col gap-4">
-      <Text variant={"body-md"}>Home</Text>
+    <Container as="article" className="space-y-3">
+      <header className="flex items-center justify-between">
+        <TaskSummary />
+      </header>
     </Container>
   );
 }

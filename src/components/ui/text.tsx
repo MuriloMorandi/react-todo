@@ -33,6 +33,6 @@ export function Text({
       className: textVariants({ variant, className }),
       ...props,
     },
-    children
+    children,
   );
 }
