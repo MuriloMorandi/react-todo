@@ -3,7 +3,7 @@ import LogoImg from "../../assets/images/logo.svg?react";
 
 export function MainLayoutHeader() {
   return (
-    <Container as="header" className="mt-3 md:mt-20">
+    <Container as="header" className="mt-3 md:mt-20 w-full">
       <LogoImg className="h-9 md:h-12" />
     </Container>
   );

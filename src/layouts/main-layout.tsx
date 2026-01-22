@@ -5,12 +5,12 @@ import { MainLayoutContent } from "../components/layout/main-layout-content";
 
 export function MainLayout() {
   return (
-    <>
+    <div className="min-h-svh flex flex-col">
       <MainLayoutHeader />
-      <MainLayoutContent>
+      <MainLayoutContent className="flex-1">
         <Outlet />
       </MainLayoutContent>
       <MainLayoutFooter />
-    </>
+    </div>
   );
 }
