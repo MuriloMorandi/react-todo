@@ -7,7 +7,7 @@ export function MainLayoutContent({
   ...props
 }: React.ComponentProps<"main">) {
   return (
-    <main className={cx("mt-4 md:mt-8", className)} {...props}>
+    <main className={cx("mt-4 md:mt-8 flex", className)} {...props}>
       {children}
     </main>
   );

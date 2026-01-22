@@ -12,7 +12,7 @@ export default function PageHome() {
   const { tasks, loading } = useTasks();
 
   return (
-    <Container as="article" className="space-y-3">
+    <Container as="article" className="space-y-3 flex flex-col flex-1">
       <header className="flex items-center justify-between">
         <TaskSummary />
       </header>

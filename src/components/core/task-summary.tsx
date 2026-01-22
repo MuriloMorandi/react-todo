@@ -11,7 +11,7 @@ export function TaskSummary() {
         <Text variant="body-sm-bold" className="text-gray-300!">
           Tarefas criadas
         </Text>
-        <Badge variant="secondary" loading={loading}>
+        <Badge variant="secondary" loading={loading} className="tabular-nums">
           {createdTasksCount}
         </Badge>
       </div>
