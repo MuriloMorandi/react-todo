@@ -1,3 +1,4 @@
+import { nanoid } from "nanoid";
 import useLocalStorage from "use-local-storage";
 import { TASKS_STORAGE_KEY, TaskState, type Task } from "../models/task";
 
@@ -8,10 +9,10 @@ export function useTask() {
     setTasks([
       ...tasks,
       {
-        id: crypto.randomUUID(),
+        id: nanoid(),
         title: "",
         completed: false,
-        state: "creating",
+        state: TaskState.Creating,
       } as Task,
     ]);
   }

@@ -9,7 +9,7 @@ export function TaskList() {
   const { tasks, loading, createdTasksCount } = useTasks();
 
   return (
-    <section className="space-y-2 flex-1 flex flex-col">
+    <section className="space-y-2 flex-1 flex flex-col ">
       {!loading && tasks.map((task) => <TaskItem key={task.id} task={task} />)}
 
       {!loading && !createdTasksCount && (
